@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
-        run: cd Develop && npm i
+      - name: Build Application
+        run: cd Develop && npm run render-build
 
       - name: Start Application
         run: cd Develop && npm run start &
