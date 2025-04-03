@@ -19,15 +19,10 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: cd Develop && npm install
+        run: cd Develop && npm i
 
-      - name: Start Application (if needed)
-        run: cd Develop && npm run start
-        env:
-          NODE_ENV: test
-
-      - name: Install Cypress
-        run: cd Develop && npm install cypress --save-dev
+      - name: Start Application
+        run: cd Develop && npm run start &
 
       - name: Run Cypress Tests
-        run: cd Develop && npm run test:cypress
+        run: cd Develop && npm run test
