@@ -24,8 +24,5 @@ jobs:
       - name: Start Application
         run: cd Develop && npm run start &
 
-      - name: Wait on server to start
-        run: npx wait-on http://localhost:3001
-
       - name: Run Cypress Tests
         run: cd Develop && npm run test
