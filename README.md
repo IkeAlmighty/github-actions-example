@@ -11,3 +11,5 @@ https://github.com/IkeAlmighty/github-actions-example
 https://github-actions-example-fdy6.onrender.com
 
 ## Screenshots
+
+![snapshot of deployed app](./Assets/snapshot.PNG)
